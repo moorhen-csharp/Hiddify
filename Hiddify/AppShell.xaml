@@ -17,5 +17,10 @@
         Content="Настройки"
         ContentTemplate="{DataTemplate local:Settings}"
         Route="Settings" />
+    <ShellContent
+        Title="Журнал"
+        Content="Журнал"
+        ContentTemplate="{DataTemplate local:Journal}"
+        Route="Journal" />
 
 </Shell>

@@ -70,6 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Journal.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Settings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

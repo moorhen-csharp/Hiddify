@@ -24,8 +24,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
-        <Button  Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <ImageButton Source="plusw.png" Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <ImageButton Source="settw.png" Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <!--<Button Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <Button  Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>-->
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Grid.RowSpan="9" Grid.ColumnSpan="6">
 
@@ -40,7 +42,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" WidthRequest="80" CornerRadius="50"/>
+            <ImageButton Source="onw.png" Background="Gray" Grid.Column="0" WidthRequest="80" CornerRadius="50"/>
             <Button Grid.Column="1" WidthRequest="80" CornerRadius="50"/>
 
         </Grid>
