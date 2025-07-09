@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hiddify.MainPage">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+    <Grid Padding="20,40,20,10" ColumnDefinitions="Auto,*,Auto,Auto" Row="0">
+
+       
+
+      
+        <!-- Настройки -->
+        <ImageButton Source="settings.png" BackgroundColor="White" HeightRequest="32" WidthRequest="32" Grid.Column="2"/>
+        <!-- Плюс -->
+        <ImageButton Source="plus.png" BackgroundColor="Transparent" HeightRequest="32" WidthRequest="32" Grid.Column="3"/>
+    </Grid>
+
+    <!-- Центральная часть -->
+    <StackLayout Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="24">
+        <Label Text="Начните с добавления профиля подписки"
+                   TextColor="#C0C0C0"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"/>
+        <Button Text="Новый профиль"
+                    TextColor="#A2C6FF"
+                    FontSize="18"
+                    BackgroundColor="Transparent"
+                    BorderColor="#A2C6FF"
+                    BorderWidth="1"
+                    CornerRadius="24"
+                    Padding="32,8"
+                    HorizontalOptions="Center"/>
+    </StackLayout>
+
+    <!-- Нижняя навигация -->
+    <Grid Grid.Row="2" Padding="0,0,0,24" ColumnDefinitions="*,*" VerticalOptions="End">
+        <StackLayout Grid.Column="0" HorizontalOptions="Center">
+            <Frame BackgroundColor="#1A3552" CornerRadius="24" Padding="12" HasShadow="False">
+                <Image Source="power.png" HeightRequest="24" WidthRequest="24"/>
+            </Frame>
+            <Label Text="Главная" TextColor="White" FontSize="14" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Column="1" HorizontalOptions="Center">
+            <Image Source="filter.png" HeightRequest="24" WidthRequest="24"/>
+            <Label Text="Прокси" TextColor="#C0C0C0" FontSize="14" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </Grid>
+    </Grid>
+
+</ContentPage>
