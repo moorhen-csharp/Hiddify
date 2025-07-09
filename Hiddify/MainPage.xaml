@@ -24,15 +24,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ImageButton Source="plusw.png" Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
-        <ImageButton Source="settw.png" Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <ImageButton Source="add_circle.png" Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
+        <ImageButton Source="instant_mix.png" Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
         <!--<Button Grid.Row="0" Grid.Column="5" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>
         <Button  Grid.Row="0" Grid.Column="4" WidthRequest="30" HeightRequest="30" VerticalOptions="Start"/>-->
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Grid.RowSpan="9" Grid.ColumnSpan="6">
 
             <Label Text="Начните с добавления профиля подписки" TextColor="#C0C0C0" FontSize="16" HorizontalTextAlignment="Center" Padding="20"/>
-            <Button Text="Новый профиль" TextColor="#A2C6FF" FontSize="18" BackgroundColor="Transparent" BorderColor="#A2C6FF" BorderWidth="1" CornerRadius="24" Padding="32,8" HorizontalOptions="Center"/>
+            <Button Text="+ Новый профиль" TextColor="#A2C6FF" FontSize="18" BackgroundColor="Transparent" BorderColor="#A2C6FF" BorderWidth="1" CornerRadius="24" Padding="32,8" HorizontalOptions="Center"/>
         </StackLayout>
 
 
@@ -42,8 +42,8 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <ImageButton Source="onw.png" Background="Gray" Grid.Column="0" WidthRequest="80" CornerRadius="50"/>
-            <Button Grid.Column="1" WidthRequest="80" CornerRadius="50"/>
+            <ImageButton Source="mode_off_on.png" Background="Gray" Grid.Column="0" WidthRequest="80" CornerRadius="50"/>
+            <ImageButton Source="proxy.png" Background="Transparent" Grid.Column="1" WidthRequest="80" CornerRadius="50"/>
 
         </Grid>
 
