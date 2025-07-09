@@ -67,6 +67,7 @@
 	  <Folder Include="assets\fonts\" />
 	  <Folder Include="assets\images\" />
 	  <Folder Include="assets\translations\" />
+	  <Folder Include="test\" />
 	</ItemGroup>
 
 	<ItemGroup>
