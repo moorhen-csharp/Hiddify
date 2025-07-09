@@ -8,19 +8,24 @@
     Title="Hiddify">
 
     <ShellContent
-        Title="Hiddify"
-        Content="Параметры конфигурации"
+        Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
         Title="Настройки"
-        Content="Настройки"
         ContentTemplate="{DataTemplate local:Settings}"
         Route="Settings" />
     <ShellContent
         Title="Журнал"
-        Content="Журнал"
         ContentTemplate="{DataTemplate local:Journal}"
         Route="Journal" />
+    <ShellContent
+     Title="О программе"
+     ContentTemplate="{DataTemplate local:AboutProgram}"
+     Route="AboutProgram" />
+    <ShellContent
+ Title="Настройки конфигурации"
+ ContentTemplate="{DataTemplate local:ConfigurationSettings}"
+ Route="ConfigurationSettings" />
 
 </Shell>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hiddify.AboutProgram"
+             Title="О программе"
+             BackgroundColor="#232128">
+    <VerticalStackLayout Padding="16,32,16,16" Spacing="24">
+        <!-- Header -->
+        <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+            <ImageButton Source="///" WidthRequest="32" HeightRequest="32" BackgroundColor="Transparent"/>
+            <Label Text="О программе" FontSize="24" TextColor="White" VerticalOptions="Center" Grid.Column="1"/>
+        </Grid>
+
+        <!-- Logo, Name, Version -->
+        <Grid ColumnDefinitions="Auto,*" Padding="0,24,0,0" HorizontalOptions="Center">
+            <Image Source="assets/images/tray_icon.png" WidthRequest="72" HeightRequest="72" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,20,0"/>
+            <StackLayout Grid.Column="1" VerticalOptions="Center">
+                <Label Text="Hiddify" FontSize="22" TextColor="White"/>
+                <Label Text="Версия 2.1.5" FontSize="16" TextColor="#b0b0b0"/>
+            </StackLayout>
+        </Grid>
+
+        <!-- Links -->
+        <VerticalStackLayout Spacing="20" Padding="0,32,0,0" HorizontalOptions="Center" >
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="Исходный код" FontSize="18" TextColor="White"/>
+                <ImageButton Source="open_link.png" WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="Telegram-канал" FontSize="18" TextColor="White"/>
+                <ImageButton Source="open_link.png" WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="Условия и положения" FontSize="18" TextColor="White"/>
+                <ImageButton Source="open_link.png" WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="Политика конфиденциальности" FontSize="18" TextColor="White"/>
+                <ImageButton Source="open_link.png" WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent" Grid.Column="1"/>
+            </Grid>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

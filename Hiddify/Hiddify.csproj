@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="assets\images\tray_icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
@@ -65,16 +69,24 @@
 	<ItemGroup>
 	  <Folder Include="assets\core\" />
 	  <Folder Include="assets\fonts\" />
-	  <Folder Include="assets\images\" />
 	  <Folder Include="assets\translations\" />
-	  <Folder Include="test\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Resource Include="assets\images\tray_icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ConfigurationSettings.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Journal.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Settings.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AboutProgram.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
